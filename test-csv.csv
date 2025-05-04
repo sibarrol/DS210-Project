@@ -1,0 +1,7 @@
+﻿,PLAYER,Team,Pos,GP,G,A,PTS,PPG,GWG,SHG,ENG,SHOT ON NET,TOTAL FACEOFF,FACEOFF WINS,PLSMNS,Opponent Score,PEN MIN,BLOCKS
+0,Drury Winner,Team A,D,10,10,0,10,0,0,0,0,0,0,0,0,0,0,0
+1,Roy Winner,Team A,F,10,5,15,20,1,0,4,0,0,0,0,10,0,0,10
+2,Loser A,Team A,F,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,Drury Winner B,Team B,F,10,10,0,10,0,0,0,0,0,0,0,0,0,0,0
+4,Loser B,Team B,D,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,Roy Winner B,Team B,D,10,5,15,20,1,0,4,0,0,0,0,10,0,0,10

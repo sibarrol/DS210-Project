@@ -165,21 +165,24 @@ pub fn yegorov(path: &str, team: &str) -> PolarsResult<String> {
 mod tests {
     use crate::trophies::roy;
     use crate::trophies::drury;
+
     #[test]
     // I want to test one "subjective" award (Roy) and one "objective" award (Drury)
 
     fn roy_test() {
         // Goal: Test that the sorting for the final_metric is working
-        let function_answer = roy("test-csv.csv", "Team A");
-        let function_answer_str = function_answer;
+        let function_answer = roy("src/test-csv.csv", "Team A");
+        let function_answer_str = function_answer.unwrap();
         let desired_answer = "Roy Winner";
         assert_eq!(function_answer_str, desired_answer)
     }
+
+    #[test]
     fn drury_test() {
         // Goal: Test that the sorting for goals is working
-        let function_answer = drury("test-csv.csv", "Team A");
-        let function_answer_str = function_answer;
-        let desired_answer = Ok("Drury Winner");
-        assert_eq!(function_answer, desired_answer)
+        let function_answer = drury("src/test-csv.csv", "Team A");
+        let function_answer_str = function_answer.unwrap();
+        let desired_answer = "Drury Winner";
+        assert_eq!(function_answer_str, desired_answer)
     }
 }
